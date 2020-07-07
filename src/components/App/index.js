@@ -19,20 +19,14 @@ const App = () => (
 
 			<hr />
 
-			<Route exact path={ROUTES.LANDING} 
-						 component={props => <LandingPage {...props} />
-			<Route path={ROUTES.SIGN_UP} 
-						 component={props => <SignUpPage {...props} />
-			<Route path={ROUTES.SIGN_IN} 
-						 component={props => <SignInPage {...props} />
-			<Route path={ROUTES.PASSWORD_FORGET} 
-						 component={props => <PasswordForgetPage {...props} />
-			<Route path={ROUTES.HOME} 
-						 component={props => <HomePage {...props} />
-			<Route path={ROUTES.ACCOUNT} 
-						 component={props => <AccountPage {...props} />
-			<Route path={ROUTES.ADMIN} 
-						 component={props => <AdminPage {...props} />
+			<Route exact path={ROUTES.LANDING} component={LandingPage} />
+      <Route exact path={ROUTES.SIGN_UP} component={SignUpPage} />
+      <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />
+      <Route exact path={ROUTES.PASSWORD_FORGET} 
+      			 component={PasswordForgetPage} />
+      <Route exact path={ROUTES.HOME} component={HomePage} />
+      <Route exact path={ROUTES.ACCOUNT} component={AccountPage} />
+      <Route exact path={ROUTES.ADMIN} component={AdminPage} />
 		</div>
 	</Router>
 );
